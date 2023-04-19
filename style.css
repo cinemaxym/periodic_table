@@ -1,0 +1,185 @@
+/*Periodic table of elements CSS file*/
+
+/* styling of grid container block of Periodic Table of Elements*/
+.grid-container {
+    width: 90%;
+    margin: auto;
+    display: grid;   /* using grid layoud*/
+    grid-auto-columns: minmax(40px, 100px);
+    gap: 1px;
+}
+
+/* positioning of h1 */
+h1 {
+    text-align: center;
+}
+
+/* styling of paragraphs */
+p {
+    margin: 0;
+    font-size: 0.6vw;
+    text-align: center;
+}
+
+/* styling of "h2" */
+h2 {
+    margin: 0;
+    font-size: 1.5vw;   
+}
+
+/* styling of "h3" */
+h3 {
+    margin: 0;
+    font-size: 0.7vw;
+}
+
+/* styling of grid elements in Periodic Table of Elements*/
+.grid-element {
+    width: 100%;
+    border: solid grey 1px;
+    display: flex;        /* using flex layoud for the elements*/
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+/* styling of Periodic Table of Elements image */
+.hidden-table-img>img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+/* additional styling of Nonmetal elements */
+.nonmetal {
+    background-color: rgba(255, 255, 0, 0.3);
+}
+
+/* additional styling of Transition Metal elements */
+.transition-metal {
+    background-color: rgba(0, 128, 255, 0.2);
+}
+/* additional styling of Alkaline Earth Metal elements */
+.alkaline-earth-metal {
+    background-color: rgba(64, 64, 255, 0.2);
+}
+/* additional styling of Alkali elements */
+.alkali-metal {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+/* additional styling of Post-Transition Metal elements */
+.post-transition-metal {
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+/* additional styling of Post-Transition Metal elements */
+.metalloid {
+    background-color: rgba(140, 190, 0, 0.2);
+}
+
+/* additional styling of Noble Gas elements */
+.noble-gas {
+    background-color: rgba(255, 152, 0, 0.2);
+}
+
+/* additional styling of Lanthanide elements */
+.lanthanide {
+    background-color: rgba(0, 255, 255, 0.25);
+}
+
+/* additional styling of Actinide elements */
+.actinide {
+    background-color: rgba(64, 255, 192, 0.25);
+}
+
+/* positioning part of grid elements */
+.grid-container>div:nth-child(2) {
+    grid-column: 18;
+}
+
+.grid-container>div:nth-child(5) {
+    grid-column: 13;
+}
+
+.grid-container>div:nth-child(13) {
+    grid-column: 13;
+}
+
+.grid-container>div:nth-child(57) {
+    grid-column: 4;
+}
+
+.grid-container>div:nth-child(74) {
+    grid-column: 4;
+}
+
+.grid-container>div:nth-child(89) {
+    grid-column: 4;
+}
+
+.grid-container>div:nth-child(104) {
+    grid-column: 4;
+}
+
+/* styling and positioning of "*" */
+.star {
+    border: none;
+    font-weight: 900;
+    grid-column: 3;
+    grid-row: 6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styling and positioning of "**" */
+.stars {
+    border: none;
+    font-weight: 900;
+    grid-column: 3;
+    grid-row: 7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* additional positioning of "*" */
+#star {
+    grid-row: 9;
+    justify-content: end;
+
+}
+
+/* additional positioning of "**" */
+#stars {
+    grid-row: 10;
+    justify-content: end;
+
+}
+
+/* adding gap at row 8 */
+#gap {
+    grid-column: 1/18;
+    grid-row: 8;
+}
+
+/* MEDIA QUERIES */
+
+/* the following media query hide grid-container block when screen is less then 900px*/
+@media screen and (max-width: 900px) {
+    .grid-container {
+        display: none;
+    }
+}
+
+/* the following media query hide hidden-table-img block when screen is more then 900px*/
+@media screen and (min-width: 900px) {
+    .hidden-table-img {
+        display: none;
+    }
+
+}
